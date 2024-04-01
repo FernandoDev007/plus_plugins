@@ -4,6 +4,7 @@ version: 6.0.1
 homepage: https://plus.fluttercommunity.dev/
 repository: https://github.com/fluttercommunity/plus_plugins/tree/main/packages/connectivity_plus/connectivity_plus
 issue_tracker: https://github.com/fluttercommunity/plus_plugins/labels/connectivity_plus
+publish_to: 'none'
 
 environment:
   sdk: ">=3.2.0 <4.0.0"
@@ -37,7 +38,10 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
-  connectivity_plus_platform_interface: ^2.0.0
+  connectivity_plus_platform_interface:
+    git:
+      url: https://github.com/FernandoDev007/plus_plugins.git
+      path: packages/connectivity_plus/connectivity_plus_platform_interface
   web: '>=0.3.0 <=0.6.0'
   meta: ^1.8.0
   nm: ^0.5.0

@@ -4,6 +4,7 @@ version: 6.0.0
 homepage: https://plus.fluttercommunity.dev/
 repository: https://github.com/fluttercommunity/plus_plugins/tree/main/packages/battery_plus/battery_plus
 issue_tracker: https://github.com/fluttercommunity/plus_plugins/labels/battery_plus
+publish_to: 'none'
 
 flutter:
   plugin:
@@ -28,7 +29,10 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
-  battery_plus_platform_interface: ^2.0.0
+  battery_plus_platform_interface:
+    git:
+      url: https://github.com/FernandoDev007/plus_plugins.git
+      path: packages/battery_plus/battery_plus_platform_interface
   meta: ^1.8.0
   upower: ^0.7.0
   web: ^0.5.0
