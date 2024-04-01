@@ -109,7 +109,7 @@ void main() {
               ),
             );
 
-            final versionMap = await plugin.getAll(baseUrl: baseUrl);
+            final versionMap = await plugin.getAll();
 
             expect(versionMap.appName, VERSION_JSON['app_name']);
             expect(versionMap.version, VERSION_JSON['version']);
@@ -224,7 +224,7 @@ void main() {
     setUp(() {
       client = MockClient();
       assetManagerMock = MockAssetManager();
-      plugin = PackageInfoPlusWebPlugin(client, assetManagerMock);
+      plugin = PackageInfoPlusWebPlugin(client);
     });
 
     testWidgets(
@@ -293,7 +293,7 @@ void main() {
             ),
           );
 
-          final versionMap = await plugin.getAll(baseUrl: customBaseUrl);
+          final versionMap = await plugin.getAll();
 
           expect(versionMap.appName, VERSION_JSON['app_name']);
           expect(versionMap.version, VERSION_JSON['version']);
