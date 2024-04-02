@@ -33,6 +33,7 @@ dependencies:
     git:
       url: https://github.com/FernandoDev007/plus_plugins.git
       path: packages/battery_plus/battery_plus_platform_interface
+      ref: inuba
   meta: ^1.8.0
   upower: ^0.7.0
   web: ^0.5.0
